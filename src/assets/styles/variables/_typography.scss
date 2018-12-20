@@ -1,0 +1,28 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Lato:700,900');
+
+// Base Font
+$font-family: 'Lato', sans-serif;;
+$font-family-heading: $font-family;
+
+$font-weight: 700;
+$font-size: 1.4rem;
+$line-height: 1.5;
+
+$font-color: $black;
+
+$bold: 900;
+
+// Font Extender
+
+%base-style {
+  font: $font-weight #{$font-size}/#{$line-height} $font-family;
+  color: $font-color;
+}
+
+%heading-style {
+  font-family: $font-family-heading;
+  font-weight: $bold;
+  line-height: 1.07;
+  color: $black;
+}

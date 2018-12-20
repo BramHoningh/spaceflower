@@ -1,0 +1,33 @@
+// ArticleItem SCSS
+.article-item {
+  .article-image {
+    width: 100%;
+    @include aspect-ratio(1, 1);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .article-footer {
+    display: flex;
+    padding: 1.6rem;
+    background-color: $primary-color;
+
+    &.dark {
+      background-color: $black;
+    }
+
+    .sub-text {
+      margin-top: 0.5rem;
+    }
+
+    .article-button {
+      display: flex;
+      align-items: flex-end;
+      margin-left: 4rem;
+
+      .icon {
+        width: 2rem;
+      }
+    }
+  }
+}

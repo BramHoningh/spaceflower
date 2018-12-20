@@ -1,0 +1,68 @@
+// Hero SCSS
+.hero {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 3.4rem;
+  max-width: $maxWidth;
+
+  .hero-images {
+    display: flex;
+    margin: 0 auto;
+    max-width: 96rem;
+    height: 27rem;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      transition: width .5s ease-in-out;
+
+      &:hover {
+        width: 200%;
+      }
+    }
+  }
+
+  .hero-title {
+    position: relative;
+    margin-top: -2.5rem;
+    padding: 0 $padding;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: $padding;
+      right: $padding;
+    }
+
+    span.padded {
+      background-color: $white;
+      box-shadow: $padding 0 0 #fff, -#{$padding} 0 0 0 #fff;
+      background-blend-mode: multiply;
+    }
+
+    span.white {
+      .purple {
+        color: $white;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .hero {
+    height: 100vh;
+    max-height: 68.8rem;
+
+    .hero-images {
+      height: 100%;
+    }
+
+    .hero-title {
+      position: absolute;
+      bottom: 117px;
+      max-width: 96rem;
+    }
+  }
+}
