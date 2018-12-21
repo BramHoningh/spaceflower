@@ -1,32 +1,10 @@
 // Articles SCSS
 .articles {
-  $articlesBottom: 14rem;
-
-  .articles-intro {
-    padding: 4.8rem $padding $articlesBottom;
-    background-color: $secondary-color;
-
-    .sub-title {
-      margin-top: 0.4rem;
-    }
-
-    .description {
-      display: flex;
-      margin-top: 2rem;
-
-      .arrow {
-        margin: 1rem 2rem 0 0;
-        width: 20rem;
-
-        .icon {
-          width: 100%;
-        }
-      }
-    }
-  }
-
   .article-items {
-    margin-top: -($articlesBottom - 4rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 3rem;
     padding: $padding;
   }
 }

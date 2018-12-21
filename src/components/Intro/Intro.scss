@@ -1,0 +1,26 @@
+// Intro SCSS
+$introBottom: 14rem;
+
+.intro {
+  margin-bottom: -($introBottom - 2rem);
+  padding: 4.8rem $padding $introBottom;
+  background-color: $secondary-color;
+
+  .sub-title {
+    margin-top: 0.4rem;
+  }
+
+  .description {
+    display: flex;
+    margin-top: 2rem;
+
+    .arrow {
+      margin: 1rem 2rem 0 0;
+      width: 20rem;
+
+      .icon {
+        width: 100%;
+      }
+    }
+  }
+}

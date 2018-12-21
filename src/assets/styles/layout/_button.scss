@@ -1,1 +1,51 @@
 // Button styling
+%btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: $font-family;
+  padding: 2.5rem 1.6rem;
+  font-size: 2.2rem;
+  font-weight: $bold;
+  border: none;
+  box-sizing: border-box;
+
+  .btn-title {
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .btn-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-left: 2rem;
+
+    .icon {
+      width: 100%;
+      max-width: 80px;
+    }
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  color: $white;
+  background-color: $primary-color;
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: $secondary-color;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  button:not(:last-of-type) {
+    margin-bottom: 1.6rem;
+  }
+}
